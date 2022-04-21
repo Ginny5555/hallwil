@@ -1,0 +1,476 @@
+body {
+  max-width: 100%;
+  color: #000000;
+  margin: 0;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+b {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  padding: 30px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 110px;
+}
+
+span {
+  font-size: 14px;
+  margin: 10px;
+}
+
+h4 {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.container {
+  width: 94%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.container2 {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.herobaner-pic img {
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+.herobaner-txt {
+  position: absolute;
+  color: white;
+  width: 20%;
+  margin: 5%;
+}
+
+.header-links {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.header-links a {
+  font-size: 19px
+}
+
+.header-menu {
+  justify-content: right;
+  display: inline-flex;
+  width: 100%;
+}
+
+.header-menu a {
+  font-size: 24px
+}
+
+#tabs img {
+  width: 50%;
+}
+
+#tabs h1 {
+  margin-bottom: -6%;
+}
+
+#tabs-1,
+#tabs-2 {
+  /* width:100%; */
+  display: inline-flex;
+  justify-content: space-between;
+  /* margin-right:10%; */
+}
+
+.tab-1 {
+  display: none !important;
+}
+
+.audience {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0rem 4rem;
+}
+
+.i-tabs-nav .ui-corner-all .ui-helper-reset .ui-helper-clearfix .ui-widget-header {
+  border-top: 2px solid black;
+
+}
+.services {
+  position: relative;
+  overflow: hidden;
+}
+
+.services h1 {
+  border-bottom: 2px solid black;
+}
+
+.services img {
+  width: 100%;
+  position: relative;
+}
+
+#accordion {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  background: linear-gradient(90deg, #F0EDEC 54%, transparent);
+}
+
+#accordion h3 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.services-accordion {
+  width: 46%;
+  position: absolute;
+  height: 100%;
+
+}
+
+.services-accordion,
+.ui-state-active {
+  background: none;
+  border: none;
+  color: black;
+  width: 60%;
+}
+
+/* case studies */
+.case-studies {
+  margin-bottom: 3%;
+}
+
+.case-studies h1 {
+  border-bottom: 2px solid black;
+}
+
+.sli,
+.slick-slide {
+  width: 20rem;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between !important;
+
+}
+
+.multiple-items {
+  width: 100%;
+  display: inline-flex;
+}
+
+.learn {
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 0;
+}
+
+.owl-item {
+  height: 800px;
+}
+
+.item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.family{
+  display: none;
+}
+
+/* popup */
+
+/* Ставим кнопку по центру */
+
+.content {
+  text-align: center;
+}
+
+
+button:focus {
+  outline: none !important
+}
+
+/* Стили для содержимого popup окна */
+
+input,
+textarea {
+  color: #494949;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 14px;
+  margin: 0 0 10px;
+  padding: 5px;
+  width: 100%;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+input:focus {
+  border-color: #808080;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #808080;
+  outline: none;
+}
+
+
+
+/* Окно */
+
+.overlay_popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+}
+
+.popup {
+  display: none;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Ещё немного стилей для popup окна */
+
+.object {
+  width: 320px;
+  height: 568px;
+  background-color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.object-menu a{
+font-size: 20px;
+padding: 5px;
+}
+.object-careers a{
+  font-size: 14px;
+  padding: 5px;
+}
+.object-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.object-careers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.object-cross{
+  width: 85%;
+    display: inline-flex;
+    justify-content: space-between;
+    height: 5%;
+    padding: 0 25px;
+}
+.cross{
+  background: none;
+  border:0;
+  color:black;
+  transform: rotate(-45deg);
+  font-size: 35px;
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: 14px;
+  }
+
+  b {
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 30px !important;
+  }
+
+  h4 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .herobaner-pic {
+    height: 29rem;
+    overflow: hidden;
+  }
+
+  .herobaner-pic img {
+    transform: translate(-32%, 4%);
+    margin-bottom: -3px;
+    height: 100%;
+    width: auto;
+  }
+
+  element.style {}
+
+  .herobaner-txt {
+    z-index: 100;
+    width: 79%;
+    top: 39%;
+  }
+
+
+.herobaner-txt h1 {
+  margin: 0;
+
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-links__careers {
+  display: none;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  float: left;
+  text-decoration: none;
+  transform: rotate(-45deg);
+  margin-left: 0 !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  transform: rotate(-45deg);
+
+}
+
+#tabs {
+  width: 94%;
+  left: 0.7rem;
+}
+#tabs img{
+  width: 100%;
+  margin-top:2rem;
+}
+.tab-1 {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.audience {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+.audience-img{
+  height: 13rem;
+  overflow: hidden;
+}
+.tab-2 {
+  display: none !important;
+}
+
+.tabs-2 {
+  border: none;
+}
+
+#ui-id-2 {
+  margin: 0 !important;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  width: 25%;
+  white-space: normal;
+  border-bottom: 2px solid black;
+  padding: 25px 15px;
+  margin-top: -5px;
+  border-right: 2px solid black;
+}
+
+.owl-item {
+  height: 500px !important;
+}
+
+.services img {
+  display: none;
+}
+
+#accordion {
+  position: relative;
+  background: transparent;
+  left: -4rem;
+}
+#accordion h3{
+  width: 506px;
+}
+.services-accordion,
+.ui-state-active {
+  width: 100%;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+
+  border-bottom: 0;
+}
+
+.burg::before {
+  content: "";
+  background: url('../img/burg.png') no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-left: -21px;
+}
+
+.learn {
+  font-size: 14px;
+}
+object {
+  width: 262px;
+  height: 397px;
+}
+.family{
+  width: 100%;
+  display: block;
+}
+
+
+}
+

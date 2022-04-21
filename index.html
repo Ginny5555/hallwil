@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Yantramanav:wght@300;700&display=swap"
+    rel="stylesheet">
+
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+  <script>
+    $(function () {
+      $("#accordion").accordion();
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 90,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 2
+          }
+        }
+      })
+      $('.show_popup').click(function () { // Вызываем функцию по нажатию на кнопку
+        var popup_id = $('#' + $(this).attr("rel")); // Связываем rel и popup_id
+        $(popup_id).show(); // Открываем окно
+        $('.overlay_popup').show(); // Открываем блок заднего фона
+      })
+      $('.cross').click(function () { // Обрабатываем клик по заднему фону
+        $('.overlay_popup, .popup').hide(); 
+      })
+    });
+  </script>
+  <script type="text/javascript">
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-links">
+        <img class="header-links__logo" src="./img/Logo.svg" alt="">
+        <a class="show_popup burg" rel="popup1"></a>
+        <div class="header-links__careers">
+          <a href="">Customer Paybill</a>
+          <a href="">Careers</a>
+        </div>
+      </div>
+      <div class="header-menu">
+        <a href="">Products</a>
+        <a href="">Services</a>
+        <a href="">Solutions</a>
+        <a href="">About</a>
+        <a class="show_popup" rel="popup1">Contact Us</a>
+      </div>
+      <div class="content">
+      </div>
+      <div class="overlay_popup"></div>
+      <div class="popup" id="popup1">
+        <div class="object">
+          <div class="object-cross">
+            <img class="logo" src="./img/Logo.svg" alt="">
+            <button class="cross">+</button>
+          </div>
+          <div class="object-menu">
+              <a href="">Products</a>
+              <a href="">Services</a>
+              <a href="">Solutions</a>
+              <a href="">About</a>
+              <a class="show_popup" rel="popup1">Contact Us</a>
+            </div>
+            <div class="object-careers">
+                <a href="">Customer Paybill</a>
+                <a href="">Careers</a>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="herobaner">
+      <div class="herobaner-txt">
+        <h1>Meet a4.</h1>
+        <h4>Don’t count the people you reach – reach the people who count.</h4>
+      </div>
+      <div class="herobaner-pic"><img src="./img/brooke-cagle-1181670-unsplash.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">01 Audience</a>
+      </li>
+      <div id="tabs-1" class="tab-2">
+        <img src="./img/ryoji-iwata-479447-unsplash (1) (1).png" alt="">
+        <div class="audience">
+          <p>Our TV + digital capabilities and end-to-end platform allow the most precise audience targeting
+            possible.</p>
+          <a href="" class="learn">learn more</a>
+          <h1>Audience</h1>
+        </div>
+      </div>
+      <li class="tabs-2"><a href="#tabs-2">02 Analytics</a>
+      </li>
+      <div id="tabs-2" class="tab-2">
+        <img src="./img/ryoji-iwata-479447-unsplash (1) (1).png" alt="">
+        <div class="audience">
+          <p>Our TV + digital capabilities and end-to-end platform allow the most precise audience targeting
+            possible.</p>
+          <a href="" class="learn">learn more</a>
+          <h1>Audience</h1>
+        </div>
+      </div>
+      <li><a href="#tabs-3">03 Creative Services</a>
+
+      </li>
+      <div id="tabs-3"  class="tab-2">
+        <img src="./img/ryoji-iwata-479447-unsplash (1) (1).png" alt="">
+        <div class="audience">
+          <p>Our TV + digital capabilities and end-to-end platform allow the most precise audience targeting
+            possible.</p>
+          <a href="" class="learn">learn more</a>
+          <h1>Audience</h1>
+        </div>
+      </div>
+      <div id="tabs-1" class="tab-2">
+    </ul>
+<div id="tabs-1" class="tab-1">
+  <div class="audience">
+    <p>Our TV + digital capabilities and end-to-end platform allow the most precise audience targeting
+      possible.</p>
+    <a href="" class="learn">learn more</a>
+    <h1>Audience</h1>
+  </div>
+  <div class="audience-img"><img src="./img/ryoji-iwata-479447-unsplash (1) (1).png" alt=""></div>
+
+</div></div>
+  </div>
+  <div class="container2">
+    <div class="services">
+      <h1>Services</h1>
+      <div class="dropdown">
+        <div id="accordion" class="services-accordion">
+          <h3><span>01</span>Audience</h3>
+          <div>
+            <b>Buy an audience, not a schedule.
+            </b>
+            <p>The average viewer spends 6 hours and 22 minutes consuming television programming each day. a4 will
+              ensure that you reach your customers with the most cost effective levels of reach.</p>
+            <a href="" class="learn">Learn More</a>
+          </div>
+          <h3><span>02</span>Media</h3>
+          <div>
+            <b>Buy an audience, not a schedule.
+            </b>
+            <p>The average viewer spends 6 hours and 22 minutes consuming television programming each day. a4 will
+              ensure that you reach your customers with the most cost effective levels of reach.</p>
+            <a href="" class="learn">Learn More</a>
+          </div>
+          <h3><span>03</span>Analytics</h3>
+          <div>
+            <b>Buy an audience, not a schedule.
+            </b>
+            <p>The average viewer spends 6 hours and 22 minutes consuming television programming each day. a4 will
+              ensure that you reach your customers with the most cost effective levels of reach.</p>
+            <a href="" class="learn">Learn More</a>
+          </div>
+          <h3><span>04</span>Exclusives</h3>
+          <div>
+            <b>Buy an audience, not a schedule.
+            </b>
+            <p>The average viewer spends 6 hours and 22 minutes consuming television programming each day. a4 will
+              ensure that you reach your customers with the most cost effective levels of reach.</p>
+            <a href="" class="learn">Learn More</a>
+          </div>
+          <h3><span>05</span>Creative Services</h3>
+          <div>
+            <b>Buy an audience, not a schedule.
+            </b>
+            <p>The average viewer spends 6 hours and 22 minutes consuming television programming each day. a4 will
+              ensure that you reach your customers with the most cost effective levels of reach.</p>
+            <a href="" class="learn">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+      <img src="./img/shutterstock_1033689085.png" alt="">
+    </div>
+    <img class="family" src="./img/shutterstock_1052675801.png" alt="">
+    <div class="case-studies">
+      <h1>Case Studies</h1>
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="./img/brooke-cagle-195777-unsplash.png" alt="">
+          <b>Medicare Advantage Advocacy Organization Leverages Digital Advertising to Achieve Congressional Action</b>
+          <a href="" class="learn">learn more</a></div>
+        <div class="item"><img src="./img/element5-digital-1126261-unsplash.png" alt="">
+          <b>Governor Leverages Mobile Digital Advertising to Engage Millennial and Hispanic Voters to Win Landslide
+            Re-Election</b>
+          <a href="" class="learn">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/owl.carousel.min.js"></script>
+  <link href="./css/css.css" rel="stylesheet" type="text/css">
+</body>
+
+</html>
